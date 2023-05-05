@@ -119,10 +119,9 @@ export default {
   .v-label {
     height: 52px !important;
     font-family: 'DelaGothicOne' !important;
-    font-size: sizeIncr(12, 20) !important;
+    font-size: sizeIncr(12, 16) !important;
     line-height: 140% !important;
     color: var(--color-text-1) !important;
-
   }
   input {
     height: 52px !important;
