@@ -76,11 +76,14 @@ export default {
   width: 100%;
   &__title {
     margin-bottom: sizeIncr(22, 44);
+    word-spacing: sizeIncr(2, 5);
     width: 100%;
     text-align: center;
     font-family: 'DelaGothicOne';
     font-size: sizeIncr(12, 20);
     line-height: 140%;
+    text-transform: uppercase;
+    color: var(--color-text-1) !important;
   }
   &__list {
     display: flex;
@@ -108,7 +111,6 @@ export default {
     align-items: center;
     justify-content: center;
     margin-right: sizeIncr(13, 20);
-
     border: 2px solid var(--color-border-2);
     border-radius: 105px;
     width: 26px;
@@ -127,8 +129,8 @@ export default {
     margin-bottom: 0;
     font-weight: 600;
     font-size: sizeIncr(14, 18);
+    color: var(--color-text-1) !important;
     line-height: 120%;
-
   }
 }
 </style>

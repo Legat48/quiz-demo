@@ -28,12 +28,12 @@
       :color="$store.getters.getStatusApp !== 3 ? 'transparent' : '#109CF8'"
       @click.prevent="nextStep()"
     >
-      <v-icon v-if="$store.getters.getStatusApp !== 3" class="footer__btn-icon" color="#109CF8">
-        mdi-arrow-right
-      </v-icon>
       <span v-if="$store.getters.getStatusApp !== 3">
         Вперед
       </span>
+      <v-icon v-if="$store.getters.getStatusApp !== 3" class="footer__btn-icon" color="#109CF8">
+        mdi-arrow-right
+      </v-icon>
       <div v-if="$store.getters.getStatusApp === 3" class="footer__text-submit" style="color: #fff !important;">
         Отправить
       </div>
@@ -88,16 +88,17 @@ export default {
   &__link {
     max-width: sizeIncr(224, 500);
     font-size: 12px;
-    color: var(--color-text-1);
+    color: var(--color-text-1) !important;
     text-align: center;
     span {
-      color: var(--color-text-2);
+      color: var(--color-text-2) !important;
     }
   }
 
   &__btn {
     border: 2px solid var(--color-border-2) !important;
-    height: 64px !important;
+    width: sizeIncr(64, 207);
+    height: 56px !important;
     color: var(--color-text-2);
     @include transition;
     position: absolute !important;
@@ -115,6 +116,10 @@ export default {
     }
     span {
       display: none;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
       @media (min-width: 768px) {
         display: flex;
       }

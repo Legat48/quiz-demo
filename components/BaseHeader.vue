@@ -1,10 +1,10 @@
 <template>
   <header class="header">
     <button class="header__logo btn" @click.prevent="skip()">
-      <img src="../assets/images/logo.png" alt="Логотип">
+      <img src="../assets/images/logo.svg" alt="Логотип">
     </button>
     <div class="header__wrap">
-      <img class="header__icon" src="../assets/images/header-icon.png">
+      <img class="header__icon" src="../assets/images/header-icon.png" alt="ИИ">
       <h1 v-if="$store.getters.getStatusApp !== 4" class="header__title">
         Ответьте на вопросы и <span>получите индивидуальное предложение</span> от нашего ИИ
       </h1>
@@ -54,12 +54,13 @@ export default {
   }
   &__title {
     max-width: sizeIncr(315, 861);
-    word-spacing: sizeIncr(2, 10);
+    word-spacing: sizeIncr(2, 5);
     font-family: 'DelaGothicOne';
     font-weight: 400;
     font-size: sizeIncr(15, 29);
     line-height: 120.5%;
-    color: var(--color-text-1);
+    color: var(--color-text-1) !important;
+    text-transform: uppercase;
     span {
       color: var(--color-text-2);
     }

@@ -4,12 +4,17 @@
       <div class="app__wrap">
         <BaseHeader class="app__header" />
         <div class="app__content-wrap">
-          <KeepAlive class="app__keep-alive">
+          <!-- нужно что бы вся страница индексировалась -->
+          <FirstStep v-show="$store.getters.getStatusApp === 1" />
+          <SecondStep v-show="$store.getters.getStatusApp === 2" />
+          <ThirdStep v-show="$store.getters.getStatusApp === 3" />
+          <FourthStep v-show="$store.getters.getStatusApp === 4" />
+          <!-- <KeepAlive class="app__keep-alive">
             <component
               :is="current"
               class="app__content"
             />
-          </KeepAlive>
+          </KeepAlive> -->
         </div>
         <BaseFooter v-if="$store.getters.getStatusApp !== 4" class="app__footer" />
       </div>
@@ -57,7 +62,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: sizeIncr(8, 17) sizeIncr(8, 97);
+    padding: sizeIncr(8, 27) sizeIncr(8, 75);
     width: sizeIncr(328, 1200);
     max-width: #{$maxvw}px;
     min-height: sizeIncr(608, 743);
@@ -68,7 +73,8 @@ export default {
     margin-bottom: auto;
   }
   &__header {
-    margin-bottom: sizeIncr(15, 50);
+    margin-bottom: sizeIncr(15, 40);
+    padding: 0 sizeIncr(0, 22);
   }
   &__header,
   &__footer {

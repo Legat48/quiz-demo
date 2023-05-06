@@ -55,14 +55,18 @@ export default {
 
 <style lang='scss' scoped>
 .test {
+  padding: 0 sizeIncr(0, 128);
   width: 100%;
   &__title {
     margin-bottom: sizeIncr(22, 44);
+    word-spacing: sizeIncr(2, 5);
     width: 100%;
     text-align: center;
     font-family: 'DelaGothicOne';
     font-size: sizeIncr(12, 20);
     line-height: 140%;
+    text-transform: uppercase;
+    color: var(--color-text-1) !important;
   }
   &__list {
     display: flex;
@@ -90,7 +94,6 @@ export default {
     align-items: center;
     justify-content: center;
     margin-right: sizeIncr(13, 20);
-
     border: 2px solid var(--color-border-2);
     border-radius: 105px;
     width: 26px;
@@ -110,6 +113,7 @@ export default {
     font-weight: 600;
     font-size: sizeIncr(14, 18);
     line-height: 120%;
+    color: var(--color-text-1) !important;
   }
 }
 </style>
@@ -122,6 +126,7 @@ export default {
     font-size: sizeIncr(12, 16) !important;
     line-height: 140% !important;
     color: var(--color-text-1) !important;
+    text-transform: uppercase;
   }
   input {
     height: 52px !important;

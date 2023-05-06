@@ -63,11 +63,14 @@ export default {
   width: 100%;
   &__title {
     margin-bottom: sizeIncr(22, 44);
+    word-spacing: sizeIncr(2, 5);
     width: 100%;
     text-align: center;
     font-family: 'DelaGothicOne';
     font-size: sizeIncr(12, 20);
     line-height: 140%;
+    text-transform: uppercase;
+    color: var(--color-text-1) !important;
   }
   &__list,
   &__item {
@@ -98,14 +101,17 @@ export default {
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
-    color: var(--color-text-1);
+    color: var(--color-text-1) !important;
+    text-transform: uppercase;
   }
   &__link {
     margin-bottom: 20;
     font-family: 'DelaGothicOne';
     font-weight: 500;
     font-size: sizeIncr(12, 16);
+    color: var(--color-text-1) !important;
     line-height: 120%;
+    text-transform: uppercase;
   }
   &__link-text {
     color: var(--color-text-2);

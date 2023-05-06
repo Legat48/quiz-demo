@@ -15,9 +15,9 @@
           class="test__img"
         >
           <div class="test__icon-wrap">
-            <img class="test__icon" :src="require(`~/assets/images/daw.svg`)">
+            <img class="test__icon" :src="require(`~/assets/images/daw.svg`)" alt="Ок">
           </div>
-          <img class="test__img-svg" :src="require(`~/assets/images/step-1-${item.id}.svg`)">
+          <img class="test__img-svg" :src="require(`~/assets/images/step-1-${item.id}.svg`)" alt="Иконка">
         </div>
         <p class="test__text" style="text-align: start;">
           {{ item.text }}
@@ -80,11 +80,14 @@ export default {
   width: 100%;
   &__title {
     margin-bottom: sizeIncr(22, 44);
+    word-spacing: sizeIncr(2, 5);
     width: 100%;
     text-align: center;
     font-family: 'DelaGothicOne';
     font-size: sizeIncr(12, 20);
     line-height: 140%;
+    text-transform: uppercase;
+    color: var(--color-text-1) !important;
   }
   &__list {
     display: flex;
@@ -158,6 +161,7 @@ export default {
     font-weight: 500;
     font-size: sizeIncr(12, 14);
     line-height: 120%;
+    color: var(--color-text-1) !important;
     @media (min-width: 768px) {
       width: sizeIncr(51, 170);
     }

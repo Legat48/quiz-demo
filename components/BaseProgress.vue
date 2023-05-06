@@ -41,6 +41,6 @@ export default {
 <style lang="scss" scoped>
 .text {
   font-size: 16px;
-  color: var(--color-text-1);
+  color: var(--color-text-1) !important;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="app-link">
     <div class="app-link__title">
-      {{ $t('texts.goToApp') }}
+      Перейти к приложению
     </div>
     <div class="app-link__wrap">
       <a
@@ -30,7 +30,8 @@ export default {
     font-weight: 500;
     font-size: sizeIncr(16, 20);
     line-height: 120%;
-    color: var(--color-text-1);
+    color: var(--color-text-1) !important;
+
   }
   &__wrap {
     display: flex;

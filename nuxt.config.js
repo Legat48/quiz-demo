@@ -76,8 +76,8 @@ export default {
     ['nuxt-stripe-module', {
       publishableKey: 'pk_live_51LrP3yKFgb67L964suZAG44GW77SOXz8jLa66Y7luGgbK05ynj4VtrksTQMIT03p3VnEdAizwVJtJd3KDujPhOmc00Xg4oawHA'
     }],
-    '@nuxtjs/axios',
-    '@nuxtjs/i18n'
+    '@nuxtjs/axios'
+    // '@nuxtjs/i18n'
   ],
   plugins: [],
 
@@ -128,7 +128,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  },
+  }
   // Locales /импорт текстов
-  i18n
+  // i18n
 }
